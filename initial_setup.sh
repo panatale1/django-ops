@@ -12,3 +12,10 @@ if [ $(which pip) == "" ]; then
 fi
 pip install virtualenv
 pip install virtualenvwrapper
+
+mkdir -p ~/.virtualenvs
+
+if [[ $(grep WORKON_HOME ~/.bashrc) -ne 0 ]]; then
+    echo "export WORKON_HOME=~/.virtualenvs" >> ~/.bashrc
+fi
+

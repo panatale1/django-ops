@@ -19,4 +19,6 @@ sudo pip install -U pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 
-
+(see script in repo)
+make .virtualenvs directory
+Export virtualenv directory

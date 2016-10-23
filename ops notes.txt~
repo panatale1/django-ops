@@ -4,3 +4,19 @@ install virtualenv
 -pip installed?
 	1.5.4
 pip used at system level to provide venv & venvwrapper
+
+SCRIPT should
+-Test for python version
+-Test for pip (install if needed)
+-pip install venv and venvwrapper at system level
+
+test for python:
+which python
+
+determine execution code:
+echo "$?"
+sudo pip install -U pip
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+
+(see script in repo)
