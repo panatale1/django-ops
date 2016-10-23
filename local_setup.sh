@@ -20,4 +20,6 @@ fi
 source $VENV_DIR/$VENV_NAME/bin/activate
 #echo $VIRTUAL_ENV
 pip install -r requirements
-
+django-admin startproject mysite
+cd mysite
+./manage.py runserver
