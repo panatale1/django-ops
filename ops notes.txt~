@@ -1,0 +1,6 @@
+install virtualenv
+-check python version
+	2.7.6
+-pip installed?
+	1.5.4
+pip used at system level to provide venv & venvwrapper
