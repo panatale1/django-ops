@@ -14,9 +14,6 @@ if [[ "$?" -ne 0 ]]; then
     echo "i'm right here!"
     apt-get install -u python-pip
 fi
-# if [ $(which pip) == "" ]; then
-#     apt-get install -U python-pip
-# fi
 pip install virtualenv
 pip install virtualenvwrapper
 
