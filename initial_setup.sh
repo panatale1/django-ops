@@ -6,10 +6,17 @@ if [[ $(id -u) -ne 0 ]]; then
 fi
 if [ $(which python) == "" ]; then
     apt-get install python
+else
+    echo "Python already installed"
 fi
-if [ $(which pip) == "" ]; then
-    apt-get install -U python-pip
+pip = $(which pip)
+if [[ "$?" -ne 0 ]]; then
+    echo "i'm right here!"
+    apt-get install -u python-pip
 fi
+# if [ $(which pip) == "" ]; then
+#     apt-get install -U python-pip
+# fi
 pip install virtualenv
 pip install virtualenvwrapper
 
